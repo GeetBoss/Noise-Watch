@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #abc8a2; /* soft minty green */
+  --color-dark: #1a2417; /* dark green */
+  --color-light: #f8f8f8; /* light background */
+  --color-text-dark: #1a2417; /* for text */
+  --color-text-light: #f0f0f0; /* for light text */
+}
+
+/* Reusable glassy card style */
+.glass-card {
+  @apply bg-white/80 backdrop-blur-lg shadow-md border border-gray-200;
+}
+
+/* Grid system for dashboard layout */
+.dashboard-grid {
+  @apply grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+}
